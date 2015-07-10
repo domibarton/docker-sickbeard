@@ -24,4 +24,5 @@ EXPOSE 443
 
 USER sickbeard
 
+WORKDIR /sickbeard
 CMD /start.sh
