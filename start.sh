@@ -1,4 +1,7 @@
 #!/bin/sh
-cd /sickbeard
+
+echo 'Updating SickBeard...'
 git pull
-./SickBeard.py --nolaunch --datadir=/datadir --config=/datadir/config.ini
+
+echo 'Starting SickBeard...'
+exec ./SickBeard.py --nolaunch --datadir=/datadir --config=/datadir/config.ini

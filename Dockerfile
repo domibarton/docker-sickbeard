@@ -9,7 +9,7 @@ RUN apt-get -q update \
     && rm -rf /tmp/*
 
 RUN groupadd -r -g 666 sickbeard \
-    && useradd -r -u 666 -g 666 sickbeard
+    && useradd -r -u 666 -g 666 -d /sickbeard sickbeard
 
 RUN git clone https://github.com/midgetspy/Sick-Beard.git /sickbeard \
     && chown -R sickbeard: /sickbeard
@@ -25,4 +25,4 @@ EXPOSE 8080
 USER sickbeard
 
 WORKDIR /sickbeard
-CMD /start.sh
+CMD ["/start.sh"]
