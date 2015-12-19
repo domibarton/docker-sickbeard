@@ -18,7 +18,7 @@ ADD start.sh /start.sh
 RUN chown sickbeard: /start.sh \
     && chmod 755 /start.sh
 
-VOLUME ['/datadir', '/media']
+VOLUME ["/datadir", "/media"]
 
 EXPOSE 8080
 
