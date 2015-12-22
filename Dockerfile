@@ -11,7 +11,7 @@ RUN apt-get -q update \
 RUN groupadd -r -g 666 sickbeard \
     && useradd -r -u 666 -g 666 -d /sickbeard sickbeard
 
-RUN git clone https://github.com/midgetspy/Sick-Beard.git /sickbeard \
+RUN git clone -b master https://github.com/midgetspy/Sick-Beard.git /sickbeard \
     && chown -R sickbeard: /sickbeard
 
 ADD start.sh /start.sh
