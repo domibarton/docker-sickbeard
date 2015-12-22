@@ -3,7 +3,7 @@
 echo "Updating SickBeard git repository..."
 git pull
 
-if [[ -n "${VERSION}" ]]
+if [ -n "${VERSION}" ]
 then
     echo "Checking out SickBeard version '${VERSION}'..."
     git checkout ${VERSION}
