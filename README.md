@@ -79,9 +79,9 @@ _SickBeard will automatically be updated and switched to your defined version wh
 ### UID and GID
 
 By default SickBeard runs with user ID and group ID `666`.
-If you want to run SickBeard with different ID's you've to set the `UID` and/or `GID` environment variables, for example:
+If you want to run SickBeard with different ID's you've to set the `SICKBEARD_UID` and/or `SICKBEARD_GID` environment variables, for example:
 
 ```
-UID=1234
-GID=1234
+SICKBEARD_UID=1234
+SICKBEARD_GID=1234
 ```
