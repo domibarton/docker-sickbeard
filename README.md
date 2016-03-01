@@ -6,7 +6,6 @@ The Docker image currently supports:
 
 * running SickBeard under its __own user__ (not `root`)
 * changing of the __UID and GID__ for the SickBeard user
-* instant __switching between different SickBeard versions__
 * support for OpenSSL / HTTPS encryption
 
 ## Run
