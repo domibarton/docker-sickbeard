@@ -6,7 +6,6 @@ The Docker image currently supports:
 
 * running SickBeard under its __own user__ (not `root`)
 * changing of the __UID and GID__ for the SickBeard user
-* __automatic update__ of SickBeard on container restart
 * instant __switching between different SickBeard versions__
 * support for OpenSSL / HTTPS encryption
 
@@ -63,18 +62,6 @@ If you want to change this you've to set the `CONFIG` environment variable, for 
 ```
 CONFIG=/datadir/sickbeard.ini
 ```
-
-### SickBeard Version
-
-By default the latest SickBeard version will be used. This is achieved by pointing at the `master` tree of the [SickBeard git repository](https://github.com/midgetspy/Sick-Beard/tree/master). If you want a different version you've set the `VERSION` environment variable to a valid git [branch](https://github.com/midgetspy/Sick-Beard/branches) or [tag](https://github.com/midgetspy/Sick-Beard/tags), for example:
-
-```
-VERSION=development
-```
-
-Please note that `VERSION=master` always points to the latest stable version, while `VERSION=development` points to the bleeding-edge version of SickBeard.
-
-_SickBeard will automatically be updated and switched to your defined version when you restart your container._
 
 ### UID and GID
 

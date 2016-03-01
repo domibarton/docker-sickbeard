@@ -2,8 +2,6 @@
 sickbeard:
     build: .
     container_name: 'sickbeard'
-    environment:
-        VERSION: 'master'
     volumes:
         - './data/datadir:/datadir'
         - './data/media:/media'
