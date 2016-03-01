@@ -24,7 +24,7 @@ RUN export VERSION=build-507 \
     && apt-get install -qy curl python-cheetah python-openssl \
     && curl -o /tmp/sickbeard.tar.gz https://codeload.github.com/midgetspy/Sick-Beard/tar.gz/${VERSION} \
     && tar xzf /tmp/sickbeard.tar.gz \
-    && mv sickbeard-* sickbeard \
+    && mv Sick-Beard-* sickbeard \
     && chown -R sickbeard: sickbeard \
     && apt-get -y remove curl \
     && apt-get -y autoremove \
