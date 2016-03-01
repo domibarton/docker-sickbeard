@@ -41,4 +41,4 @@ echo "[DONE]"
 #
 
 echo "Starting SickBeard..."
-exec ./SickBeard.py --nolaunch --datadir=$(dirname ${CONFIG}) --config=${CONFIG}
+exec su -pc "./SickBeard.py --nolaunch --datadir=$(dirname ${CONFIG}) --config=${CONFIG}" ${USER}

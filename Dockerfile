@@ -16,7 +16,7 @@ ADD sickbeard.sh /sickbeard.sh
 RUN chmod 755 /sickbeard.sh
 
 #
-# Install all required dependencies.
+# Install SickBeard and all required dependencies.
 #
 
 RUN export VERSION=build-507 \
