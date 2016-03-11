@@ -21,7 +21,7 @@ RUN chmod 755 /sickbeard.sh
 
 RUN export VERSION=build-507 \
     && apt-get -q update \
-    && apt-get install -qy curl python-cheetah python-openssl \
+    && apt-get install -qy curl ca-certificates python-cheetah python-openssl \
     && curl -o /tmp/sickbeard.tar.gz https://codeload.github.com/midgetspy/Sick-Beard/tar.gz/${VERSION} \
     && tar xzf /tmp/sickbeard.tar.gz \
     && mv Sick-Beard-* sickbeard \
